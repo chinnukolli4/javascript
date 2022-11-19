@@ -1,0 +1,24 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function validate(){
+		var email=document.getElementById("email").value;
+		var emailCheck=/^[a-zA-Z#._0-9]+\.[a-z]{2,3}$/
+		if(!email.match(emailCheck)){
+			alert("check your email id")
+			return false
+		}
+		return true
+	}
+	</script>
+</head>
+<body>
+	<p><input placeholder="enter email id" id="email"></p>
+	<button>submit</button>
+
+</body>
+</html> 
